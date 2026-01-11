@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clube das Teclas - Aprenda Piano</title>
+
+  <!-- Otimização: Preconnect para acelerar carregamento de imagens -->
+  <link rel="preconnect" href="https://i.postimg.cc" crossorigin>
+  <link rel="dns-prefetch" href="https://i.postimg.cc">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: {
+              300: '#F3E5AB',
+              400: '#D4AF37',
+              500: '#C5A028',
+              600: '#A6801E',
+              700: '#846210',
+            },
+            dark: {
+              950: '#030303',
+              900: '#0A0A0A',
+              800: '#111111',
+              700: '#1A1A1A',
+            }
+          },
+          fontFamily: {
+            heading: ['Montserrat', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          },
+          backgroundImage: {
+            'premium-gradient': 'radial-gradient(circle at top, #1A1A1A 0%, #050505 100%)',
+          },
+          animation: {
+            'shimmer': 'shimmer 3s infinite',
+          },
+          keyframes: {
+            shimmer: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' },
+            }
+          }
+        },
+      },
+    }
+  </script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <style>
+    body {
+      background-color: #050505;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .gold-text {
+      background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 50%, #A6801E 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .premium-card {
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      /* Reduzido de 20px para performance */
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+      will-change: transform;
+      /* Hint para o navegador otimizar */
+    }
+
+    .premium-card:hover {
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(212, 175, 55, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .cta-glow {
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    }
+
+    .cta-glow:hover {
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+  <!-- CSS do Vite -->
+  <link rel="stylesheet" href="/index.css" />
+
+  <!-- UTMify -->
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck data-utmify-prevent-subids
+    async defer></script>
+
+  <script>
+    window.pixelId = "693d86f8c6c0a4dcb60c0d69";
+    const a = document.createElement("script");
+    a.async = true;
+    a.defer = true;
+    a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+    document.head.appendChild(a);
+  </script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body class="overflow-x-hidden antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
