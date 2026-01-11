@@ -1,7 +1,7 @@
 import { Music, Video, Infinity, FileX, Mic, Heart, Film, Globe, Palette, Box, Sparkles } from 'lucide-react';
 import { FeatureItem } from './types';
 
-export const CHECKOUT_URL = "https://pay.lowify.com.br/checkout?product_id=5ZZgs6";
+export const CHECKOUT_URL = "https://www.ggcheckout.com/checkout/v4/1xgadg2IAx7VBoyOwUYu";
 
 export const FEATURES: FeatureItem[] = [
   {
